@@ -1,3 +1,3 @@
 ---
 name: Bug report
-abou
+about: Create a report to he
