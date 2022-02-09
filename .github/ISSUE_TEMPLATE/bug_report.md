@@ -18,4 +18,4 @@ Steps to reproduce the behavior:
 4. See error
 
 **Expected behavior**
-A clear and
+A clear and concise desc
