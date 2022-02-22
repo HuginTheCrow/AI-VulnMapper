@@ -28,4 +28,4 @@ If applicable, add screenshots to help explain your problem.
  - Browser [e.g. chrome, safari]
  - Version [e.g. 22]
 
-**Smartphone (please complete t
+**Smartphone (please complete the following 
