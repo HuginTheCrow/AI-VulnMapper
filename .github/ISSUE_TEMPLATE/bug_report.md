@@ -29,4 +29,4 @@ If applicable, add screenshots to help explain your problem.
  - Version [e.g. 22]
 
 **Smartphone (please complete the following information):**
- - D
+ - Device: [e.g. 
