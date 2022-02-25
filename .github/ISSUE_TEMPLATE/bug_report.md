@@ -29,4 +29,5 @@ If applicable, add screenshots to help explain your problem.
  - Version [e.g. 22]
 
 **Smartphone (please complete the following information):**
- - Device: [e.g. 
+ - Device: [e.g. iPhone6]
+ - OS
