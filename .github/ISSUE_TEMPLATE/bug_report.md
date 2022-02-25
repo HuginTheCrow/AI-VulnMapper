@@ -30,4 +30,4 @@ If applicable, add screenshots to help explain your problem.
 
 **Smartphone (please complete the following information):**
  - Device: [e.g. iPhone6]
- - OS
+ - OS: [e.g. iOS8.
