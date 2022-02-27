@@ -31,4 +31,4 @@ If applicable, add screenshots to help explain your problem.
 **Smartphone (please complete the following information):**
  - Device: [e.g. iPhone6]
  - OS: [e.g. iOS8.1]
- - Browser 
+ - Browser [e.g. stock bro
