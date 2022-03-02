@@ -1,3 +1,3 @@
 ---
 name: Feature request
-abo
+about: Suggest an idea 
