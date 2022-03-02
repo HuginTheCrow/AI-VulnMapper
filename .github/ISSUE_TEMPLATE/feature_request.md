@@ -1,2 +1,3 @@
 ---
-name
+name: Feature request
+abo
