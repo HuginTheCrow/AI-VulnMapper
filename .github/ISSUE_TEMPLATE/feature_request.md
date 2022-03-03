@@ -1,3 +1,4 @@
 ---
 name: Feature request
-about: Suggest an idea 
+about: Suggest an idea for this project
+titl
