@@ -3,4 +3,5 @@ name: Docker Image CI
 on:
   push:
     branches: [ "main" ]
-  pull_req
+  pull_request:
+    branc
