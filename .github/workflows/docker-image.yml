@@ -22,4 +22,5 @@ jobs:
     - name: Build the Docker image
       shell: bash
       run: |
-        # fail if any bash syntax e
+        # fail if any bash syntax error
+       
