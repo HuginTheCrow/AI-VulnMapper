@@ -23,4 +23,4 @@ jobs:
       shell: bash
       run: |
         # fail if any bash syntax error
-       
+        set -eEuo pipefa
