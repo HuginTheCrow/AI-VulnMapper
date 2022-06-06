@@ -25,4 +25,4 @@ jobs:
         # fail if any bash syntax error
         set -eEuo pipefail
 
-        export D
+        export DOCKER_BUILDKIT=
