@@ -27,4 +27,4 @@ jobs:
 
         export DOCKER_BUILDKIT=1
 
-        # with the new target,
+        # with the new target, test the pytest wo
