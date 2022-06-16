@@ -28,4 +28,4 @@ jobs:
         export DOCKER_BUILDKIT=1
 
         # with the new target, test the pytest works
-        docker b
+        docker build -f build/final
