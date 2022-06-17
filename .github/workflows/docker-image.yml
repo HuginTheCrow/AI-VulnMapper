@@ -29,4 +29,5 @@ jobs:
 
         # with the new target, test the pytest works
         docker build -f build/final_image/Dockerfile --target test -t test-vulmap-works:latest .
-        docker rmi te
+        docker rmi test-vulmap-works:latest
+
