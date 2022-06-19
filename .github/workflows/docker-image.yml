@@ -31,3 +31,4 @@ jobs:
         docker build -f build/final_image/Dockerfile --target test -t test-vulmap-works:latest .
         docker rmi test-vulmap-works:latest
 
+        # build the
