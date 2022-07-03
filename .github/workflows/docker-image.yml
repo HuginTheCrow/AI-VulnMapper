@@ -32,4 +32,4 @@ jobs:
         docker rmi test-vulmap-works:latest
 
         # build the image aswell, in case more steps arise
-        docker build -f build/final_image/Dockerfile -t vulnmap
+        docker build -f build/final_image/Dockerfile -t vulnmapai:latest .
