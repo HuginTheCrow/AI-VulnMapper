@@ -29,3 +29,16 @@ class Advisor:
                 api_key = input("PLEASE ENTER OPENAI API KEY: ")
         self.full_discovery_result = discovery_result
         self.discovery_result = " ".join(discovery_result.split()[:2000])
+        self.title = title
+        self.exploits = exploits
+        self.api_key = api_key
+        self.api_url = api_url
+        self.headers = {
+            'Authorization': f'Bearer {self.api_key}',
+            'Content-Type': 'application/json',
+        }
+        self.logger = Logger(__name__).get_logger()
+
+    def _query_api(self, json_data: Dict) -> str:
+        """
+        Private method to query the OpenAI API with provided JSON data.
