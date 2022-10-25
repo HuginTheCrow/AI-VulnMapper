@@ -42,3 +42,23 @@ class Advisor:
     def _query_api(self, json_data: Dict) -> str:
         """
         Private method to query the OpenAI API with provided JSON data.
+
+        Args:
+            json_data (dict): JSON data to be sent to the API.
+
+        Returns:
+            str: Response from the API.
+        """
+
+        async def _send_to_openai_async():
+            async with httpx.AsyncClient() as client:
+                response = await client.post(
+                    url=self.api_url,
+                    json=json_data,
+                    headers=self.headers,
+                    timeout=120,
+                )
+                if response.status_code == 200:
+                    return response.json()["choices"][0]["message"]['content']
+                else:
+                    response.raise_for_status()
