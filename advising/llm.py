@@ -62,3 +62,22 @@ class Advisor:
                     return response.json()["choices"][0]["message"]['content']
                 else:
                     response.raise_for_status()
+
+        return asyncio.run(_send_to_openai_async())
+
+    def _load_prompts(self, prompt_type: str) -> Dict[str, str]:
+        """
+        Load prompts from the prompts.yaml file based on the prompt_type.
+
+        Args:
+            prompt_type (str): 'advise_attack_prompt', 'summarize_discoveries_prompt', etc.
+
+        Returns:
+            Dict[str, str]: Dictionary containing 'system' and 'user' prompts.
+        """
+        with open(PROMPTS_FILE, 'r') as prompts_file:
+            prompts_data = safe_load(prompts_file)
+        return prompts_data.get(prompt_type, {})
+
+    def advise_attack(self) -> str:
+        """
