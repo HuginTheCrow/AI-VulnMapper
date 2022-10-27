@@ -81,3 +81,19 @@ class Advisor:
 
     def advise_attack(self) -> str:
         """
+        Formulates a query and sends it to the OpenAI API to receive advice on potential attacks.
+
+        Returns:
+            str: Advice on potential attacks from the API.
+        """
+        self.logger.info(AdvisorConstants.ADVICE_ATTACK)
+        prompts = self._load_prompts('advise_attack_prompt')
+        json_data = {
+            'model': 'gpt-4',
+            'messages': [
+                {
+                    'role': 'system',
+                    'content': prompts['system'],
+                },
+                {
+                    'role': 'user',
