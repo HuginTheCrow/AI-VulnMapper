@@ -97,3 +97,18 @@ class Advisor:
                 },
                 {
                     'role': 'user',
+                    'content': prompts['user'].format(discovery_result=self.discovery_result),
+                },
+            ],
+        }
+        return self._query_api(json_data)
+
+    def summarize_discoveries(self) -> str:
+        """
+        Formulates a  query and sends it to the OpenAI API to summarize the discoveries made during the scan.
+
+        Returns:
+            str: Summarized discoveries from the API.
+        """
+        self.logger.info(AdvisorConstants.DISCOVERIES)
+        prompts = self._load_prompts('summarize_discoveries_prompt')
