@@ -112,3 +112,20 @@ class Advisor:
         """
         self.logger.info(AdvisorConstants.DISCOVERIES)
         prompts = self._load_prompts('summarize_discoveries_prompt')
+        json_data = {
+            'model': 'gpt-4',
+            'messages': [
+                {
+                    'role': 'system',
+                    'content': prompts['system'],
+                },
+                {
+                    'role': 'user',
+                    'content': prompts['user'].format(discovery_result=self.discovery_result),
+                },
+            ],
+        }
+        return self._query_api(json_data)
+
+    def prepare_report(self) -> Dict:
+        """
