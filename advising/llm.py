@@ -144,3 +144,12 @@ class Advisor:
         if "script" in self.full_discovery_result:
             for k, v in self.full_discovery_result["script"].items():
                 self.full_discovery_result[k] = v
+            del self.full_discovery_result["script"]
+
+        return {
+            "title": self.title,
+            "exploits": exploits,
+            "discoveries": discoveries,
+            "advise": advise,
+            "full_discovery_result": self.full_discovery_result
+        }
