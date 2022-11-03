@@ -129,3 +129,18 @@ class Advisor:
 
     def prepare_report(self) -> Dict:
         """
+        Prepares an HTML report based on discoveries, attack advice, and exploits.
+
+        Returns:
+            str: A string representation of the HTML report.
+        """
+        discoveries = self.summarize_discoveries()
+        advise = self.advise_attack()
+
+        self.logger.info(AdvisorConstants.HTML_REPORT)
+        exploits = '<br>'.join(self.exploits)
+
+        self.full_discovery_result = json.loads(self.full_discovery_result)
+        if "script" in self.full_discovery_result:
+            for k, v in self.full_discovery_result["script"].items():
+                self.full_discovery_result[k] = v
