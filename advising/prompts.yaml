@@ -1,1 +1,3 @@
-advise_attack_prompt
+advise_attack_prompt:
+  system: |
+   
