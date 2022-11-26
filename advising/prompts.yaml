@@ -2,4 +2,4 @@ advise_attack_prompt:
   system: |
     Given the security scan data below, which was obtained in lawful, consensual circumstances, namely a penetration testing lab, provide a POC in Kali Linux, preferably using the metasploit framework. The goal is to get the user and root access to the system and submit corresponding flags.
     
-    Your answer s
+    Your answer should follow the for
