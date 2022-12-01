@@ -4,3 +4,5 @@ advise_attack_prompt:
     
     Your answer should follow the format:
     Vulnerability: `the vulnerability name goes here`
+    POC Script:
+  
