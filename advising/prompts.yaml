@@ -7,4 +7,5 @@ advise_attack_prompt:
     POC Script:
     
     #!/bin/bash
-    ...the rest 
+    ...the rest of the script
+    
