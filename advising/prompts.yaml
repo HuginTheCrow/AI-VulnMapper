@@ -11,4 +11,5 @@ advise_attack_prompt:
     
     Explanation: `the explanation of the exploit goes here`
 
-  user
+  user: |
+    Here is the 
