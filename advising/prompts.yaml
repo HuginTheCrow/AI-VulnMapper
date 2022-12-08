@@ -12,4 +12,5 @@ advise_attack_prompt:
     Explanation: `the explanation of the exploit goes here`
 
   user: |
-    Here is the result of nmap
+    Here is the result of nmap discovery:
+    
