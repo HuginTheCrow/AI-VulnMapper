@@ -9,4 +9,6 @@ advise_attack_prompt:
     #!/bin/bash
     ...the rest of the script
     
-    Explanation: `the explanation of the exploit 
+    Explanation: `the explanation of the exploit goes here`
+
+  user
