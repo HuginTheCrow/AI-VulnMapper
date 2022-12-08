@@ -13,4 +13,4 @@ advise_attack_prompt:
 
   user: |
     Here is the result of nmap discovery:
-    
+    `{discovery_resu
