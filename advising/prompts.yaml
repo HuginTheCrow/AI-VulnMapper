@@ -15,4 +15,5 @@ advise_attack_prompt:
     Here is the result of nmap discovery:
     `{discovery_result}`
 
-summarize_di
+summarize_discoveries_prompt:
+  
