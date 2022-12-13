@@ -16,4 +16,5 @@ advise_attack_prompt:
     `{discovery_result}`
 
 summarize_discoveries_prompt:
-  
+  system: |
+    Pl
