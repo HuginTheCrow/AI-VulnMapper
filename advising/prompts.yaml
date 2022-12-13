@@ -17,4 +17,4 @@ advise_attack_prompt:
 
 summarize_discoveries_prompt:
   system: |
-    Pl
+    Please summarize t
