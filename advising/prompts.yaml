@@ -18,4 +18,6 @@ advise_attack_prompt:
 summarize_discoveries_prompt:
   system: |
     Please summarize the key discoveries from the provided security scan data in the number of sentences proportional to the number of sentences in the nmap discovery result.
-    Think in terms of what could get the user and root access to the system
+    Think in terms of what could get the user and root access to the system.
+  user: |
+    Here is
