@@ -21,4 +21,4 @@ summarize_discoveries_prompt:
     Think in terms of what could get the user and root access to the system.
   user: |
     Here is the result of nmap discovery:
-    `{discovery_
+    `{discovery_result}`
