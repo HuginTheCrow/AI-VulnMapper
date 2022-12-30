@@ -14,3 +14,16 @@ COPY utils ./utils
 COPY webapp ./webapp
 COPY config.py .
 COPY constants.py .
+COPY main.py .
+COPY requirements.txt .
+
+# Install Python libraries
+RUN python -m pip install -r requirements.txt
+
+# Set the script as the entrypoint
+ENTRYPOINT ["python", "/app/main.py"]
+
+FROM base as test
+
+# copy the test files
+COPY tests ./tests
