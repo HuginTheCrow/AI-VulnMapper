@@ -27,3 +27,9 @@ FROM base as test
 
 # copy the test files
 COPY tests ./tests
+
+# run pytest tests
+RUN pytest -svv
+
+# Go back to the base image
+FROM base as prod
