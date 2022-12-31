@@ -1,1 +1,1 @@
-# configuration file for sto
+# configuration file for storing constan
