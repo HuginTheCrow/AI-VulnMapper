@@ -1,1 +1,1 @@
-# configuration
+# configuration file for sto
