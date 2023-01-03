@@ -1,2 +1,5 @@
 # configuration file for storing constants
-from pathlib im
+from pathlib import Path
+
+
+EXP
