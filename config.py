@@ -2,4 +2,4 @@
 from pathlib import Path
 
 
-EXP
+EXPLOITS_DIR = "/usr/sha
