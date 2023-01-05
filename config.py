@@ -2,4 +2,4 @@
 from pathlib import Path
 
 
-EXPLOITS_DIR = "/usr/share/metasploit-
+EXPLOITS_DIR = "/usr/share/metasploit-framework/modules/explo
