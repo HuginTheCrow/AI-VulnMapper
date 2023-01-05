@@ -2,4 +2,4 @@
 from pathlib import Path
 
 
-EXPLOITS_DIR = "/usr/sha
+EXPLOITS_DIR = "/usr/share/metasploit-
