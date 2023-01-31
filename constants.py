@@ -1,1 +1,1 @@
-class Ad
+class AdvisorConstants
