@@ -1,2 +1,2 @@
 class AdvisorConstants:
-    API_KEY_ERROR = "OPE
+    API_KEY_ERROR = "OPENAI_API_KEY NOT SET AS
