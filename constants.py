@@ -5,4 +5,5 @@ class AdvisorConstants:
     HTML_REPORT = "Preparing the HTML report."
 
 class ExploitManagerConstants:
-    START_MSF = "Starting MS
+    START_MSF = "Starting MSF..."
+    MSF_SUCCESSFUL
