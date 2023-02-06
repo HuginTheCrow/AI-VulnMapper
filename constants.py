@@ -6,4 +6,4 @@ class AdvisorConstants:
 
 class ExploitManagerConstants:
     START_MSF = "Starting MSF..."
-    MSF_SUCCESSFUL
+    MSF_SUCCESSFUL = "MSF successfully st
