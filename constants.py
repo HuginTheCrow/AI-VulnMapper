@@ -4,4 +4,5 @@ class AdvisorConstants:
     DISCOVERIES = "Summarizing the discoveries."
     HTML_REPORT = "Preparing the HTML report."
 
-class ExploitMa
+class ExploitManagerConstants:
+    STAR
