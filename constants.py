@@ -7,4 +7,5 @@ class AdvisorConstants:
 class ExploitManagerConstants:
     START_MSF = "Starting MSF..."
     MSF_SUCCESSFUL = "MSF successfully started."
-    MSF_ERROR = "MSF failed to start
+    MSF_ERROR = "MSF failed to start!"
+    MSF_TIMEDOUT
