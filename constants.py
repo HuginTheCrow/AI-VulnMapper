@@ -10,4 +10,4 @@ class ExploitManagerConstants:
     MSF_ERROR = "MSF failed to start!"
     MSF_TIMEDOUT = "Timed out waiting for MSF service to start!"
 
-cl
+class Penetratio
