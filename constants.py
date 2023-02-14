@@ -11,4 +11,4 @@ class ExploitManagerConstants:
     MSF_TIMEDOUT = "Timed out waiting for MSF service to start!"
 
 class PenetrationTesterConstants:
-    C
+    CLEAN_SCAN = "Cl
