@@ -12,4 +12,6 @@ class ExploitManagerConstants:
 
 class PenetrationTesterConstants:
     CLEAN_SCAN = "Cleaning results from previous scan..."
-    START_SCAN = "Starting scan and report proc
+    START_SCAN = "Starting scan and report process."
+    
+
