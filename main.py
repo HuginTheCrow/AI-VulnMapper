@@ -4,4 +4,4 @@ from orchestration.pentest import PenetrationTester
 from webapp.app import app
 
 
-def main(targ
+def main(targets, top_ports
