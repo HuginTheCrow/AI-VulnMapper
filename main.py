@@ -10,4 +10,4 @@ def main(targets, top_ports):
     app.run(debug=False, host='0.0.0.0', port=1337)
 
 
-if __
+if __name__ == "__main_
