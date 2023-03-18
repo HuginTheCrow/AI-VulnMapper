@@ -11,4 +11,4 @@ def main(targets, top_ports):
 
 
 if __name__ == "__main__":
-    parser = argpar
+    parser = argparse.ArgumentParser(descri
