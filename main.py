@@ -10,4 +10,5 @@ def main(targets, top_ports):
     app.run(debug=False, host='0.0.0.0', port=1337)
 
 
-if __name__ == "__main_
+if __name__ == "__main__":
+    parser = argpar
