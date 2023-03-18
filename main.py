@@ -5,4 +5,4 @@ from webapp.app import app
 
 
 def main(targets, top_ports):
-    pentester = PenetrationTester
+    pentester = PenetrationTester(targets, top_por
