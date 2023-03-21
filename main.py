@@ -13,4 +13,5 @@ def main(targets, top_ports):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run penetration tests on the given target subnets.')
 
-    # Targets Argumen
+    # Targets Argument
+    parser.add_
