@@ -16,4 +16,4 @@ if __name__ == "__main__":
     # Targets Argument
     parser.add_argument('targets', nargs='+', help='List of target subnets.')
 
-  
+    # Top Ports
