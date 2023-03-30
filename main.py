@@ -14,4 +14,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run penetration tests on the given target subnets.')
 
     # Targets Argument
-    parser.add_argument('targets', nargs='+', help='List
+    parser.add_argument('targets', nargs='+', help='List of target subnets.')
+
+  
