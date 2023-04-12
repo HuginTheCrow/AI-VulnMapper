@@ -19,4 +19,5 @@ if __name__ == "__main__":
     # Top Ports Argument
     parser.add_argument('-p', '--top_ports', type=int, default=300, help='Number of most common ports to scan.')
 
-    # Parse t
+    # Parse the arguments
+    args 
