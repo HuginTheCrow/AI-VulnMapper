@@ -21,3 +21,5 @@ if __name__ == "__main__":
 
     # Parse the arguments
     args = parser.parse_args()
+
+    # Valida
