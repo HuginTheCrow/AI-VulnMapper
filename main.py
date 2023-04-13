@@ -23,4 +23,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Validate top_ports
-    if args.top
+    if args.top_ports < 1:
+ 
