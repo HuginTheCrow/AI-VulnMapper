@@ -24,4 +24,6 @@ if __name__ == "__main__":
 
     # Validate top_ports
     if args.top_ports < 1:
-        parser.error("top_ports must be a
+        parser.error("top_ports must be a positive integer.")
+
+    # M
