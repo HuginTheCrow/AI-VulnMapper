@@ -26,4 +26,5 @@ if __name__ == "__main__":
     if args.top_ports < 1:
         parser.error("top_ports must be a positive integer.")
 
-    # Maximum limit of top_po
+    # Maximum limit of top_ports
+    if args.t
