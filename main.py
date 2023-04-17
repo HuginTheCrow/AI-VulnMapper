@@ -31,4 +31,4 @@ if __name__ == "__main__":
         parser.error("top_ports must be less than or equal to 8367.")
 
     # Run the main function with parsed arguments
-    main(args.targets,
+    main(args.targets, args.top_ports)
