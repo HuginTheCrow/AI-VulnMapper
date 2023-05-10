@@ -15,4 +15,4 @@ Please include a brief description of the changes this PR introduces and the iss
 
 ### Additional Context (if any)
 
-Provide any additional context or screenshots about the feature request or bug
+Provide any additional context or screenshots about the feature request or bug report here.
