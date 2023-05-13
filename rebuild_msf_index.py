@@ -29,3 +29,16 @@ def build_index(exploits_dir=EXPLOITS_DIR) -> None:
 
     for foldername, _, filenames in os.walk(exploits_dir):
         for filename in filenames:
+            if filename.endswith('.rb'):
+                filepath = os.path.join(foldername, filename)
+                try:
+                    with open(filepath, 'r', encoding='utf-8', errors='ignore') as file:
+                        content = file.read()
+                        name_match = name_pattern.search(content)
+                        description_match = description_pattern.search(content)
+                        if name_match and description_match:
+                            index.append({
+                                'name': name_match.group(1),
+                                'description': description_match.group(1),
+                                'path': os.path.relpath(filepath, exploits_dir).replace(os.path.sep, '/')[:-3] #remove extension
+                            })
