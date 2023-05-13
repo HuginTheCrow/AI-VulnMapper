@@ -49,3 +49,22 @@ class NetworkScanner:
                 port_info[key] = protocol_data[key]
 
         return port_info
+
+    def scan_range(self, subnet_address: str, start_port: int, end_port: int):
+        """
+        Scans a range of ports on a subnet.
+
+        Args:
+            subnet_address (str): The address of the subnet to be scanned.
+            start_port (int): The starting port number.
+            end_port (int): The ending port number.
+        """
+        self.logger.info(f"Scanning range {start_port}-{end_port} on subnet {subnet_address}")
+        port_scanner = nmap.PortScanner()
+        ports_enumeration = ",".join(self.ports[start_port:end_port + 1])
+        port_scanner.scan(hosts=subnet_address, arguments='-sV -T3 -sT --script=discovery -p' + ports_enumeration)
+
+        for scanned_host in port_scanner.all_hosts():
+            for protocol_type in port_scanner[scanned_host].all_protocols():
+                if protocol_type != "tcp":
+                    continue
