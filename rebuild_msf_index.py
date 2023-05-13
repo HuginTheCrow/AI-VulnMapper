@@ -42,3 +42,12 @@ def build_index(exploits_dir=EXPLOITS_DIR) -> None:
                                 'description': description_match.group(1),
                                 'path': os.path.relpath(filepath, exploits_dir).replace(os.path.sep, '/')[:-3] #remove extension
                             })
+                except Exception as e:
+                    print(f"Error reading {filepath}: {e}")
+
+    with open(MSF_INDEX_FILE, 'w') as f:
+        json.dump(index, f)
+
+
+if __name__=='__main__':
+    build_index()
