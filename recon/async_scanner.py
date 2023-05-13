@@ -68,3 +68,24 @@ class NetworkScanner:
             for protocol_type in port_scanner[scanned_host].all_protocols():
                 if protocol_type != "tcp":
                     continue
+
+                for port_number in port_scanner[scanned_host][protocol_type].keys():
+                    port_info = self.extract_port_info(scanned_host, protocol_type, port_number,
+                                                       port_scanner[scanned_host])
+                    if port_info:
+                        self.results_queue.put(port_info)
+
+    def _create_processes(self, subnet_address: str, cpu_count: int, port_range: int, last_port: int) -> List:
+        """
+        Creates and starts a list of processes to scan a subnet.
+
+        Args:
+            subnet_address (str): The address of the subnet to be scanned.
+            cpu_count (int): Number of CPU cores available.
+            port_range (int): Range of ports to be scanned per process.
+            last_port (int): The last port in the range to be scanned.
+
+        Returns:
+            list: List of created and started multiprocessing.Process objects.
+        """
+        processes = []
