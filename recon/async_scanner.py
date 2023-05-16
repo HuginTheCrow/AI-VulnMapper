@@ -89,3 +89,24 @@ class NetworkScanner:
             list: List of created and started multiprocessing.Process objects.
         """
         processes = []
+        for i in range(cpu_count):
+            start_port = i * port_range
+            end_port = (i + 1) * port_range if i < cpu_count - 1 else last_port
+            p = multiprocessing.Process(target=self.scan_range, args=(subnet_address, start_port, end_port))
+            processes.append(p)
+            p.start()
+        return processes
+
+    def _yield_results(self, processes: List) -> Dict:
+        """
+        Yields results from the results_queue as they become available.
+
+        Args:
+            processes (list): List of multiprocessing.Process objects.
+
+        Yields:
+            dict: Port information dictionary from the results_queue.
+        """
+        while processes:
+            while not self.results_queue.empty():
+                yield self.results_queue.get()
