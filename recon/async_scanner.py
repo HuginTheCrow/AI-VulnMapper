@@ -110,3 +110,26 @@ class NetworkScanner:
         while processes:
             while not self.results_queue.empty():
                 yield self.results_queue.get()
+
+            for p in processes[:]:
+                if not p.is_alive():
+                    processes.remove(p)
+                    while not self.results_queue.empty():
+                        yield self.results_queue.get()
+
+            time.sleep(1)
+
+    def execute_scan(self) -> Dict:
+        """
+        Executes the scanning, evently distributing the ports to be scanned among CPU cores.
+
+        Yields:
+            dict: Port information dictionary from the results_queue.
+        """
+        cpu_count = multiprocessing.cpu_count()
+        port_range = self.top_ports // cpu_count
+
+        self.logger.info(f"Starting the scanning process with {cpu_count} processes for {self.top_ports} most common ports")
+
+        for subnet_address in self.target_subnets:
+            processes = self._create_processes(subnet_address, cpu_count, port_range, self.top_ports)
