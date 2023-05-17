@@ -133,3 +133,4 @@ class NetworkScanner:
 
         for subnet_address in self.target_subnets:
             processes = self._create_processes(subnet_address, cpu_count, port_range, self.top_ports)
+            yield from self._yield_results(processes)
