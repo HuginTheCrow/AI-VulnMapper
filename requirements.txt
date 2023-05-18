@@ -1,2 +1,4 @@
 python-nmap
-request
+requests
+msgpack-python
+pymetas
