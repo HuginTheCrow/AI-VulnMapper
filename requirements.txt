@@ -1,4 +1,7 @@
 python-nmap
 requests
 msgpack-python
-pymetas
+pymetasploit3
+openai
+httpx
+flask
