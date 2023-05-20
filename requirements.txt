@@ -5,3 +5,5 @@ pymetasploit3
 openai
 httpx
 flask
+pytest
+PyYAML
