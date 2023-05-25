@@ -1,2 +1,3 @@
 import pytest
-import
+import socket
+import subproc
