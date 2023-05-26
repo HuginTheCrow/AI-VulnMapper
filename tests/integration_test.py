@@ -5,4 +5,4 @@ import time
 
 
 def is_port_open(host, port, timeout=1):
-    """Check if a gi
+    """Check if a given port is o
