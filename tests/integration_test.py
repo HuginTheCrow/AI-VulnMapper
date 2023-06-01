@@ -7,4 +7,5 @@ import time
 def is_port_open(host, port, timeout=1):
     """Check if a given port is open."""
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.settimeout(tim
+        s.settimeout(timeout)
+        try:
