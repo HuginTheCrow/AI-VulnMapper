@@ -10,4 +10,5 @@ def is_port_open(host, port, timeout=1):
         s.settimeout(timeout)
         try:
             s.connect((host, port))
-            ret
+            return True
+        exc
