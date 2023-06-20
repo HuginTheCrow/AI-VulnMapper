@@ -11,4 +11,4 @@ def is_port_open(host, port, timeout=1):
         try:
             s.connect((host, port))
             return True
-        exc
+        except socket.error:
