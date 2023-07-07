@@ -12,4 +12,7 @@ def is_port_open(host, port, timeout=1):
             s.connect((host, port))
             return True
         except socket.error:
-            return F
+            return False
+
+
+def test_server_
