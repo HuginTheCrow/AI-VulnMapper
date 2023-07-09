@@ -15,4 +15,6 @@ def is_port_open(host, port, timeout=1):
             return False
 
 
-def test_server_
+def test_server_start():
+    """
+ 
