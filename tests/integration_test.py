@@ -17,4 +17,4 @@ def is_port_open(host, port, timeout=1):
 
 def test_server_start():
     """
-    Test the startup of the server by running a P
+    Test the startup of the server by running a Python script in the backg
