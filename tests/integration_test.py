@@ -19,4 +19,4 @@ def test_server_start():
     """
     Test the startup of the server by running a Python script in the background.
 
-    The test p
+    The test performs the following 
