@@ -21,4 +21,4 @@ def test_server_start():
 
     The test performs the following steps:
     1. Initiates the server by running 'main.py' script with '127.0.0.1' as an argument.
-    
+    2. Waits for an initi
