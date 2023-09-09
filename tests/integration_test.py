@@ -23,4 +23,4 @@ def test_server_start():
     1. Initiates the server by running 'main.py' script with '127.0.0.1' as an argument.
     2. Waits for an initial duration to account for any startup delay.
     3. Checks for 60 seconds to see if the server starts and becomes accessible on '127.0.0.1:1337'.
-    4. If the server starts withi
+    4. If the server starts within the duration, t
