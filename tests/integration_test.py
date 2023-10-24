@@ -24,4 +24,5 @@ def test_server_start():
     2. Waits for an initial duration to account for any startup delay.
     3. Checks for 60 seconds to see if the server starts and becomes accessible on '127.0.0.1:1337'.
     4. If the server starts within the duration, the test is considered successful.
-    5. If the server doesn't start within 60 seconds, or if the Python script encounters a
+    5. If the server doesn't start within 60 seconds, or if the Python script encounters an issue,
+       the te
