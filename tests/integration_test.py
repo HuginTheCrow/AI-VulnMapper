@@ -28,4 +28,5 @@ def test_server_start():
        the test is marked as failed.
 
     Returns:
-        None. If the server doesn't start as expected, an assertion error
+        None. If the server doesn't start as expected, an assertion error is raised.
+  
