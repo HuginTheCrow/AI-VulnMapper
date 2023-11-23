@@ -30,4 +30,4 @@ def test_server_start():
     Returns:
         None. If the server doesn't start as expected, an assertion error is raised.
     """
-    # Run the python script 
+    # Run the python script in the backgrou
