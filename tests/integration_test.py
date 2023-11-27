@@ -31,4 +31,4 @@ def test_server_start():
         None. If the server doesn't start as expected, an assertion error is raised.
     """
     # Run the python script in the background
-    process = 
+    process = subprocess.Popen(["pytho
