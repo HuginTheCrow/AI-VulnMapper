@@ -33,4 +33,4 @@ def test_server_start():
     # Run the python script in the background
     process = subprocess.Popen(["python", "main.py", "127.0.0.1"])
 
-    # Gi
+    # Give an initial del
