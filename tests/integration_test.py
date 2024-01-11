@@ -34,4 +34,6 @@ def test_server_start():
     process = subprocess.Popen(["python", "main.py", "127.0.0.1"])
 
     # Give an initial delay, assuming the server might not start instantly
-    time.s
+    time.sleep(2)
+
+    # Check 
