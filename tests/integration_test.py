@@ -36,4 +36,5 @@ def test_server_start():
     # Give an initial delay, assuming the server might not start instantly
     time.sleep(2)
 
-    # Check if the server starts within 60 se
+    # Check if the server starts within 60 seconds
+    for _ in 
