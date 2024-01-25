@@ -37,4 +37,5 @@ def test_server_start():
     time.sleep(2)
 
     # Check if the server starts within 60 seconds
-    for _ in 
+    for _ in range(60):
+        if is
