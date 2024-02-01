@@ -39,4 +39,4 @@ def test_server_start():
     # Check if the server starts within 60 seconds
     for _ in range(60):
         if is_port_open("127.0.0.1", 1337):
-            # If server started, 
+            # If server started, end the test as successful
