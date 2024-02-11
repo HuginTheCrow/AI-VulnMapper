@@ -41,4 +41,4 @@ def test_server_start():
         if is_port_open("127.0.0.1", 1337):
             # If server started, end the test as successful
             process.terminate()
-  
+            retu
