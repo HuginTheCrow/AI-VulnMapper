@@ -43,4 +43,6 @@ def test_server_start():
             process.terminate()
             return
 
-        ti
+        time.sleep(1)
+
+    #
