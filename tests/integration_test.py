@@ -47,4 +47,4 @@ def test_server_start():
 
     # If the server didn't start within 60 seconds, or if the python process had a problem
     process.terminate()
- 
+    assert False, "Server
