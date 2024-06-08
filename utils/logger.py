@@ -7,4 +7,5 @@ class Logger:
         self.logger.setLevel(log_level)
 
         # Create a file handler for writing log files
-        log_file_path 
+        log_file_path = 'runtime.log'
+        
