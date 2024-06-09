@@ -8,4 +8,6 @@ class Logger:
 
         # Create a file handler for writing log files
         log_file_path = 'runtime.log'
-        file_handler = logging.FileHandl
+        file_handler = logging.FileHandler(log_file_path)
+
+ 
