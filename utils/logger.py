@@ -10,4 +10,4 @@ class Logger:
         log_file_path = 'runtime.log'
         file_handler = logging.FileHandler(log_file_path)
 
-        # Create a console handler for printing log
+        # Create a console handler for printing logs to the console
