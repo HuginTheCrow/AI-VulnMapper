@@ -11,4 +11,4 @@ class Logger:
         file_handler = logging.FileHandler(log_file_path)
 
         # Create a console handler for printing logs to the console
-        console_h
+        console_handler = loggin
