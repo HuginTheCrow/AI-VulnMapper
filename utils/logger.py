@@ -12,3 +12,5 @@ class Logger:
 
         # Create a console handler for printing logs to the console
         console_handler = logging.StreamHandler()
+
+        # Create 
