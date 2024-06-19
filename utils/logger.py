@@ -14,4 +14,4 @@ class Logger:
         console_handler = logging.StreamHandler()
 
         # Create a formatter and set it for both handlers
-        formatter
+        formatter = logging.Formatter('%(
