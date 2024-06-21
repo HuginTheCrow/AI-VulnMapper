@@ -14,4 +14,4 @@ class Logger:
         console_handler = logging.StreamHandler()
 
         # Create a formatter and set it for both handlers
-        formatter = logging.Formatter('%(asctime)s - %(name)s
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - 
