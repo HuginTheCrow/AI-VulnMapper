@@ -16,4 +16,4 @@ class Logger:
         # Create a formatter and set it for both handlers
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         file_handler.setFormatter(formatter)
-        console_handle
+        console_handler.setForma
