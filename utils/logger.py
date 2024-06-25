@@ -18,4 +18,4 @@ class Logger:
         file_handler.setFormatter(formatter)
         console_handler.setFormatter(formatter)
 
-        # Add
+        # Add both handlers to t
