@@ -19,4 +19,4 @@ class Logger:
         console_handler.setFormatter(formatter)
 
         # Add both handlers to the logger
-        self.logger.add
+        self.logger.addHandler(file_handler)
