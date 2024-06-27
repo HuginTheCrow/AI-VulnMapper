@@ -20,3 +20,4 @@ class Logger:
 
         # Add both handlers to the logger
         self.logger.addHandler(file_handler)
+        self.lo
