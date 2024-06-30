@@ -20,4 +20,6 @@ class Logger:
 
         # Add both handlers to the logger
         self.logger.addHandler(file_handler)
-        self.logger.addHandler(console_
+        self.logger.addHandler(console_handler)
+
+    d
