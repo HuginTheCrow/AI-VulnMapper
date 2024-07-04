@@ -22,4 +22,4 @@ class Logger:
         self.logger.addHandler(file_handler)
         self.logger.addHandler(console_handler)
 
-    d
+    def get_logger(self):
