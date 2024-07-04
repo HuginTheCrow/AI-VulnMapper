@@ -23,3 +23,4 @@ class Logger:
         self.logger.addHandler(console_handler)
 
     def get_logger(self):
+        return s
