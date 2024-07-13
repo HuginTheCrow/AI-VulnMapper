@@ -69,3 +69,19 @@ def ask_chatgpt():
             engine="text-davinci-003",  # You can choose a different engine if needed
             prompt=user_query,
             max_tokens=50,  # Adjust the max tokens as per your requirements
+            n=1  # Number of responses to generate
+        )
+
+        # Extract the response text from the API response
+        chatgpt_response = response.choices[0].text
+
+        # Return the ChatGPT response as JSON
+        return jsonify({"response": chatgpt_response})
+
+    except Exception as e:
+        # Handle any exceptions that may occur during the API request
+        return jsonify({"error": str(e)}), 500
+
+
+if __name__ == '__main__':
+    app.run()
