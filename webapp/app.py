@@ -56,3 +56,16 @@ def ask_chatgpt():
     Returns:
         JSON response containing the ChatGPT response to the user's query.
     """
+    # Extract the user's query from the POST request data
+    user_query = request.form['query']
+
+    # Check if the 'query' parameter is provided in the request
+    if not user_query:
+        return jsonify({"error": "Please provide a 'query' parameter in the POST request."}), 400
+
+    try:
+        # Make a request to the ChatGPT API
+        response = openai.Completion.create(
+            engine="text-davinci-003",  # You can choose a different engine if needed
+            prompt=user_query,
+            max_tokens=50,  # Adjust the max tokens as per your requirements
