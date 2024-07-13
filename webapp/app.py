@@ -40,3 +40,19 @@ def serve_report(filename):
     Returns:
         The requested report file.
     """
+    kwargs = json.load(open(os.path.join(app.config['REPORT_FOLDER'], filename)))
+    return render_template("report_template.html", **kwargs)
+
+
+@app.route('/ask-chatgpt', methods=['POST'])
+def ask_chatgpt():
+    """
+    Handle POST requests to obtain responses from ChatGPT.
+
+    This function is responsible for processing POST requests containing user queries
+    and sending these queries to the ChatGPT API for responses. It then returns the
+    generated response in a JSON format.
+
+    Returns:
+        JSON response containing the ChatGPT response to the user's query.
+    """
