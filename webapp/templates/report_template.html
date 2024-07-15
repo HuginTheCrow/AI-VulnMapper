@@ -22,3 +22,21 @@
         <div class="section">
             <h2 class="header">Attack Advice:</h2>
             <div class="divider"></div>
+            <p>{{ advise }}</p>
+        </div>
+
+        <div class="section">
+            <h2 class="header">Full Discovery Result:</h2>
+            <div class="divider"></div>
+            <p>
+                {% for key, value in full_discovery_result.items() %}
+                    {{ key }}: {{ value }}<br>
+                {% endfor %}
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
